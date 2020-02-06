@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Руслан Гусейнов](https://up.htmlacademy.ru/react/3/user/1330673).
-* Наставник: `Неизвестно`.
+* Наставник: [Вениамин Шитиков](https://htmlacademy.ru/profile/id960273).
 
 ---
 
