@@ -3,14 +3,14 @@ import Main from "../main/main.jsx";
 import PropTypes from "prop-types";
 
 const App = (props) => {
-  const {offers} = props;
+  const {placeCards} = props;
   return (
-    <Main offers={offers} />
+    <Main placeCards={placeCards} />
   );
 };
 
 App.propTypes = {
-  offers: PropTypes.arrayOf = (
+  placeCards: PropTypes.arrayOf = (
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       amount: PropTypes.number.isRequired
