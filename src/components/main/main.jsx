@@ -1,5 +1,5 @@
 import React from "react";
-import placeCard from "../placeCard/placeCard.jsx";
+import Hotels from "../Hotels/Hotels.jsx";
 import PropTypes from "prop-types";
 
 const Main = (props) => {
@@ -94,8 +94,8 @@ const Main = (props) => {
                 </select>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {placeCards.map((card, index) => (
-                  <placeCard key={index} name={card.name} amount={card.amount}/>
+                {placeCards.map((card) => (
+                  <Hotels key={card.name} name={card.name} amount={card.amount} />
                 ))}
               </div>
             </section>
