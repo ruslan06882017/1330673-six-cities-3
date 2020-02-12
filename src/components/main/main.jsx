@@ -94,8 +94,8 @@ const Main = (props) => {
                 </select>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {placeCards.map((card) => (
-                  <placeCard key={card.name}/>
+                {placeCards.map((card, index) => (
+                  <placeCard key={index} name={card.name} amount={card.amount}/>
                 ))}
               </div>
             </section>
