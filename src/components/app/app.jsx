@@ -14,7 +14,8 @@ App.propTypes = {
   numberOfRent: PropTypes.number.isRequired,
   offers: PropTypes.arrayOf = (
     PropTypes.shape({
-      name: PropTypes.string.isRequired
+      name: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired
     })
   )
 };
