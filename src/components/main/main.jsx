@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const Main = (props) => {
   const {offers} = props;
-  const numberOfRent = offers.count;
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -31,7 +30,7 @@ const Main = (props) => {
       </header>
 
       <main className="page__main page__main--index">
-        <h1 className="visually-hidden">Cities {numberOfRent}</h1>
+        <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
           <section className="locations container">
             <ul className="locations__list tabs__list">
@@ -95,7 +94,9 @@ const Main = (props) => {
                 </select>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                <Offers offers={offers}/>
+                {offers.map((offer) => (
+                  <Offers key={offer.name} name={offer.name} amount={offer.amount}/>
+                ))}
               </div>
             </section>
             <div className="cities__right-section">
@@ -109,10 +110,10 @@ const Main = (props) => {
 };
 
 Main.propTypes = {
-  numberOfRent: PropTypes.number.isRequired,
   offers: PropTypes.arrayOf = (
     PropTypes.shape({
-      name: PropTypes.string.isRequired
+      name: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired
     })
   )
 };

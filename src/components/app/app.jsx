@@ -4,14 +4,12 @@ import PropTypes from "prop-types";
 
 const App = (props) => {
   const {offers} = props;
-  const numberOfRent = offers.count;
   return (
-    <Main numberOfRent={numberOfRent} offers={offers} />
+    <Main offers={offers} />
   );
 };
 
 App.propTypes = {
-  numberOfRent: PropTypes.number.isRequired,
   offers: PropTypes.arrayOf = (
     PropTypes.shape({
       name: PropTypes.string.isRequired,
