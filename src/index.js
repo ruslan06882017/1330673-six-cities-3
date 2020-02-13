@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from './components/app/app.jsx';
 
-const placeCards = [
+const places = [
   {name: `Beautiful & luxurious apartment at great location`, amount: 180},
   {name: `Wood and stone place`, amount: 120},
   {name: `Hotel 3`, amount: 100},
@@ -12,7 +12,7 @@ const placeCards = [
 
 ReactDOM.render(
     <App
-      placeCards = {placeCards}
+      places = {places}
     />,
     document.querySelector(`#root`)
 );
