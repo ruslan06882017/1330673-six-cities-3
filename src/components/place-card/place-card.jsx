@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const placeCard = (props) => {
+const PlaceCard = (props) => {
   const {name, amount} = props;
   return (
     <article className="cities__place-card place-card">
@@ -41,8 +41,8 @@ const placeCard = (props) => {
   );
 };
 
-placeCard.propTypes = {
+PlaceCard.propTypes = {
   name: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired
 };
-export default placeCard;
+export default PlaceCard;
