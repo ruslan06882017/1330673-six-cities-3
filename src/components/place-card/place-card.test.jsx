@@ -3,12 +3,11 @@ import PlaceCard from "./place-card.jsx";
 import renderer from "react-test-renderer";
 
 const name = `The very long name of hotel will be here`;
-const amount = 200;
 
 it(`<PlaceCard /> should render for card`, ()=>{
   const tree = renderer
   .create(
-      <PlaceCard name={name} amount={amount}
+      <PlaceCard name={name}
       />)
     .toJSON();
   expect(tree).toMatchSnapshot();

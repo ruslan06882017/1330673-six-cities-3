@@ -9,15 +9,14 @@ Enzyme.configure({
 
 it(`Should title of place be pressed`, () => {
   const onCardTitleClick = jest.fn();
-
   const placeCardComponent = shallow(
       <PlaceCard
-        name = {`The long name of hotel`}
-        amount = {120}
+        name = {`Sun star beach hotel 5`}
+        onCardTitleClick = {onCardTitleClick}
       />
   );
 
   const h2Element = placeCardComponent.find(`h2.place-card__name`);
   h2Element.simulate(`click`);
-  expect(onCardTitleClick.mock.calls.length).toBe(0);
+  expect(onCardTitleClick.mock.calls.length).toBe(1);
 });

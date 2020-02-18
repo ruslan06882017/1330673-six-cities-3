@@ -10,7 +10,11 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  places: PropTypes.array.isRequired
+  places: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired
+      })
+  )
 };
 
 export default App;

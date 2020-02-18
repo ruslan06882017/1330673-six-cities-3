@@ -39,7 +39,6 @@ exports[`<PlaceCard /> should render for card 1`] = `
           className="place-card__price-value"
         >
           €
-          200
         </b>
         <span
           className="place-card__price-text"

@@ -192,7 +192,7 @@ exports[`<App /> should render for places 1`] = `
               </svg>
             </span>
             <ul
-              className="places__options places__options--custom places__options"
+              className="places__options places__options--custom places__options--opened"
             >
               <li
                 className="places__option places__option--active"
@@ -291,7 +291,6 @@ exports[`<App /> should render for places 1`] = `
                       className="place-card__price-value"
                     >
                       €
-                      100
                     </b>
                     <span
                       className="place-card__price-text"
@@ -393,7 +392,6 @@ exports[`<App /> should render for places 1`] = `
                       className="place-card__price-value"
                     >
                       €
-                      110
                     </b>
                     <span
                       className="place-card__price-text"
@@ -495,7 +493,6 @@ exports[`<App /> should render for places 1`] = `
                       className="place-card__price-value"
                     >
                       €
-                      120
                     </b>
                     <span
                       className="place-card__price-text"
@@ -597,7 +594,6 @@ exports[`<App /> should render for places 1`] = `
                       className="place-card__price-value"
                     >
                       €
-                      145
                     </b>
                     <span
                       className="place-card__price-text"
@@ -699,7 +695,6 @@ exports[`<App /> should render for places 1`] = `
                       className="place-card__price-value"
                     >
                       €
-                      150
                     </b>
                     <span
                       className="place-card__price-text"

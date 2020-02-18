@@ -80,7 +80,7 @@ const Main = (props) => {
                     <use xlinkHref="#icon-arrow-select"></use>
                   </svg>
                 </span>
-                <ul className="places__options places__options--custom places__options">
+                <ul className="places__options places__options--custom places__options--opened">
                   <li className="places__option places__option--active" tabIndex="0">Popular</li>
                   <li className="places__option" tabIndex="0">Price: low to high</li>
                   <li className="places__option" tabIndex="0">Price: high to low</li>
@@ -95,7 +95,7 @@ const Main = (props) => {
               </form>
               <div className="cities__places-list places__list tabs__content">
                 {places.map((card) => (
-                  <PlaceCard key={card.name} name={card.name} amount={card.amount} />
+                  <PlaceCard key={card.name} name={card.name} />
                 ))}
               </div>
             </section>
@@ -110,7 +110,11 @@ const Main = (props) => {
 };
 
 Main.propTypes = {
-  places: PropTypes.array.isRequired
+  places: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired
+      })
+  )
 };
 
 export default Main;
