@@ -95,7 +95,7 @@ const Main = (props) => {
               </form>
               <div className="cities__places-list places__list tabs__content">
                 {places.map((card) => (
-                  <PlaceCard key={card.name} name={card.name} />
+                  <PlaceCard key={card.name} name={card.name} amount={card.amount} />
                 ))}
               </div>
             </section>
@@ -112,7 +112,8 @@ const Main = (props) => {
 Main.propTypes = {
   places: PropTypes.arrayOf(
       PropTypes.shape({
-        name: PropTypes.string.isRequired
+        name: PropTypes.string.isRequired,
+        amount: PropTypes.number.isRequired
       })
   )
 };
