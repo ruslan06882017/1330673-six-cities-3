@@ -3,11 +3,7 @@ import Main from "./main.jsx";
 import renderer from "react-test-renderer";
 
 const places = [
-  {name: `New island beach 5`},
-  {name: `Sun star beach`},
-  {name: `Grant place`},
-  {name: `Brilliant time`},
-  {name: `Gabriella beach`}
+  {name: `New island beach 5`, amount: 200}
 ];
 
 it(`<Main /> should render for places`, () => {
