@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import App from "./app.jsx";
 
 const places = [
-  {name: `New island beach 5`, amount: 200}
+  {name: `New island beach 4`, amount: 200}
 ];
 
 it(`<App /> should render for places`, () => {

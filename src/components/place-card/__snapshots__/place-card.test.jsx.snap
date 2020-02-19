@@ -38,7 +38,7 @@ exports[`<PlaceCard /> should render for card 1`] = `
         <b
           className="place-card__price-value"
         >
-          €
+          120€
         </b>
         <span
           className="place-card__price-text"
@@ -92,7 +92,7 @@ exports[`<PlaceCard /> should render for card 1`] = `
       <a
         href="#"
       >
-        The very long name of hotel will be here
+        The very long name of hotel will be here.
       </a>
     </h2>
     <p
