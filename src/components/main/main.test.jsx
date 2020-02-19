@@ -3,14 +3,14 @@ import Main from "./main.jsx";
 import renderer from "react-test-renderer";
 
 const places = [
-  {name: `New island beach 5`, amount: 100},
-  {name: `Sun star beach`, amount: 110},
-  {name: `Grant place`, amount: 120},
-  {name: `Brilliant time`, amount: 145},
-  {name: `Gabriella beach`, amount: 150}
+  {name: `New island beach 5`},
+  {name: `Sun star beach`},
+  {name: `Grant place`},
+  {name: `Brilliant time`},
+  {name: `Gabriella beach`}
 ];
 
-it(`<Main /> should render for places`, ()=>{
+it(`<Main /> should render for places`, () => {
   const tree = renderer
   .create(
       <Main places={places}

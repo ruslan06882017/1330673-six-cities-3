@@ -12,7 +12,8 @@ const App = (props) => {
 App.propTypes = {
   places: PropTypes.arrayOf(
       PropTypes.shape({
-        name: PropTypes.string.isRequired
+        name: PropTypes.string.isRequired,
+        amount: PropTypes.number
       })
   )
 };
