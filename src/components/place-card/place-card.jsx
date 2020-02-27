@@ -42,8 +42,9 @@ const PlaceCard = (props) => {
 };
 
 PlaceCard.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   amount: PropTypes.number,
   onCardTitleClick: PropTypes.func
 };
+
 export default PlaceCard;
