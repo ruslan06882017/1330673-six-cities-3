@@ -1,5 +1,3 @@
-// https://github.com/htmlacademy-react/1037955-six-cities-3/blob/master/src/components/offers-list/offers-list.jsx
-
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import PlaceCard from "../place-card/place-card.jsx";
@@ -22,7 +20,8 @@ class PlacesList extends PureComponent {
       <div className="cities__places-list places__list tabs__content">
         {places.map((place) => (
           <PlaceCard
-            offer = {place}
+            name = {place.name}
+            amount = {place.amount}
             key = {place.name}
           />
         ))}
@@ -34,10 +33,10 @@ class PlacesList extends PureComponent {
 PlacesList.propTypes = {
   places: PropTypes.arrayOf(
       PropTypes.shape({
-        offer: PropTypes.string
+        name: PropTypes.string,
+        amount: PropTypes.number
       })
   )
 };
-
 
 export default PlacesList;
