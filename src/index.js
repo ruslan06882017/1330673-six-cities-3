@@ -1,16 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from './components/app/app.jsx';
-
-const places = [
-  {name: `Beautiful & luxurious apartment at great location`, amount: 200},
-  {name: `Beautiful & luxurious 2`, amount: 22},
-  {name: `Beautiful & luxurious apartment 3`, amount: 160}
-];
+import Offers from './mocks/offers.jsx';
 
 ReactDOM.render(
     <App
-      places = {places}
+      places = {Offers}
     />,
     document.querySelector(`#root`)
 );

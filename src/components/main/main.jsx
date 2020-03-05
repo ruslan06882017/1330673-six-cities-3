@@ -93,7 +93,7 @@ const Main = (props) => {
                   <option className="places__option" value="top-rated">Top rated first</option>
                 </select>
               </form>
-              <PlacesList className="cities__places-list tabs__content" places={places}/>
+              <PlacesList places={places}/>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map"></section>
