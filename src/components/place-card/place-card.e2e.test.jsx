@@ -12,8 +12,9 @@ it(`Send card details when we mouse over on card`, () => {
   const placeCardComponent = shallow(
       <PlaceCard
         name = {`Sun star beach hotel 5`}
-        amount = {300}
-        onCardTitleClick = {(onCardTitleClick)}
+        amount = {120}
+        type = {`Hotel 1`}
+        onCardTitleClick = {onCardTitleClick}
       />
   );
 
