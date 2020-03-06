@@ -1,7 +1,6 @@
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import PlaceCard from "../place-card/place-card.jsx";
-// https://github.com/htmlacademy-react/904445-six-cities-3/blob/master/src/components/cards-list/cards-list.jsx
 
 class PlacesList extends PureComponent {
   constructor(props) {
@@ -9,9 +8,9 @@ class PlacesList extends PureComponent {
     this.handlePlaceCardMouseOver = this.handlePlaceCardMouseOver.bind(this);
   }
 
-  handlePlaceCardMouseOver(offer) {
+  handlePlaceCardMouseOver(places) {
     this.setState({
-      activeCard: offer
+      activeCard: places
     });
   }
 
@@ -24,7 +23,8 @@ class PlacesList extends PureComponent {
           <PlaceCard
             name = {place.name}
             amount = {place.amount}
-            key = {place.name}
+            key = {place.id}
+            type = {place.type}
             onCardMouseOver = {this.handlePlaceCardMouseOver}
           />
         ))}
@@ -36,8 +36,10 @@ class PlacesList extends PureComponent {
 PlacesList.propTypes = {
   places: PropTypes.arrayOf(
       PropTypes.shape({
+        id: PropTypes.number,
         name: PropTypes.string,
-        amount: PropTypes.number
+        amount: PropTypes.number,
+        type: PropTypes.string
       })
   )
 };

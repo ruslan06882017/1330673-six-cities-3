@@ -350,9 +350,7 @@ exports[`<App /> should render for places 1`] = `
                 </h2>
                 <p
                   className="place-card__type"
-                >
-                  Apartment
-                </p>
+                />
               </div>
             </article>
           </div>

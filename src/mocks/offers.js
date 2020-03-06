@@ -1,26 +1,26 @@
 export default [
   {
     id: 1,
-    title: `Place 1`,
-    price: 100,
+    name: `Place 1`,
+    amount: 100,
     rating: 3,
-    type: `Apartment`,
-    description: `Description 1`,
+    type: `Hotel`,
+    description: `Description 1`
   },
   {
     id: 2,
-    title: `Place 2`,
-    price: 120,
+    name: `Place 2`,
+    amount: 112,
     rating: 4,
     type: `Apartment`,
-    description: `Description 2`,
+    description: `Description 2`
   },
   {
     id: 3,
-    title: `Place 3`,
-    price: 150,
+    name: `Place 3`,
+    amount: 150,
     rating: 5,
     type: `Apartment`,
-    description: `Description 3`,
+    description: `Description 3`
   }
 ];
