@@ -19,6 +19,7 @@ it(`Should title of place be pressed`, () => {
       <PlaceCard
         card = {card}
         onCardTitleClick = {onCardTitleClick}
+        onCardHover = {() => {}}
       />
   );
 

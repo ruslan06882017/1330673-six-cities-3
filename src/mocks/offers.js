@@ -19,5 +19,12 @@ export default [
     amount: 150,
     type: `Apartment`,
     description: `Description 3`
+  },
+  {
+    id: 4,
+    name: `Place 4`,
+    amount: 160,
+    type: `Hotel`,
+    description: `Description 4`
   }
 ];

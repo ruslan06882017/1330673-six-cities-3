@@ -5,16 +5,14 @@ const PlaceCard = (props) => {
   const {card} = props;
   const {name, amount, type} = card;
   const {onCardTitleClick, onCardHover} = props;
-
+  const handleMouseEnter = () => {
+    onCardHover(card);
+  };
+  const handleMouseLeave = () => {
+    onCardHover(null);
+  };
   return (
-    <article className="cities__place-card place-card"
-      onMouseEnter={() => {
-        onCardHover(card);
-      }}
-      onMouseLeave={() => {
-        onCardHover(null);
-      }}>
-
+    <article className="cities__place-card place-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="place-card__mark">
         <span>Premium</span>
       </div>
@@ -55,15 +53,11 @@ PlaceCard.propTypes = {
   card: PropTypes.shape({
     name: PropTypes.string,
     amount: PropTypes.number,
-    type: PropTypes.string,
+    type: PropTypes.string
   }),
 
   onCardHover: PropTypes.func,
   onCardTitleClick: PropTypes.func
-};
-
-PlaceCard.defaultProps = {
-  onCardTitleClick: () => {}
 };
 
 export default PlaceCard;
