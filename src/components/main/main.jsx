@@ -109,7 +109,8 @@ Main.propTypes = {
   places: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
-        amount: PropTypes.number.isRequired
+        amount: PropTypes.number.isRequired,
+        type: PropTypes.string
       })
   )
 };

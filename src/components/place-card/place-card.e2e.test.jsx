@@ -7,18 +7,19 @@ Enzyme.configure({
   adapter: new Adapter(),
 });
 
-it(`Send card details when we mouse over on card`, () => {
+it(`Should title of place be pressed`, () => {
   const onCardTitleClick = jest.fn();
+
   const placeCardComponent = shallow(
       <PlaceCard
-        name = {`Sun star beach hotel 5`}
-        amount = {120}
-        type = {`Hotel 1`}
+        name = {`A very long name of hotel here`}
+        amount = {111}
+        type = {`Apertment`}
         onCardTitleClick = {onCardTitleClick}
       />
   );
 
-  const element = placeCardComponent.find(`.cities__place-card`);
-  element.simulate(`click`);
-  expect(onCardTitleClick).toHaveBeenCalledTimes(1);
+  const h2Element = placeCardComponent.find(`h2.place-card__name`);
+  h2Element.simulate(`click`);
+  expect(onCardTitleClick.mock.calls.length).toBe(1);
 });
