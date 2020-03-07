@@ -2,9 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const PlaceCard = (props) => {
-  const {name, amount, type, onCardTitleClick} = props;
+  const {card} = props;
+  const {name, amount, type} = card;
+  const {onCardTitleClick, onCardHover} = props;
+
   return (
-    <article className="cities__place-card place-card">
+    <article className="cities__place-card place-card"
+      onMouseEnter={() => {
+        onCardHover(card);
+      }}
+      onMouseLeave={() => {
+        onCardHover(null);
+      }}>
+
       <div className="place-card__mark">
         <span>Premium</span>
       </div>
@@ -42,11 +52,18 @@ const PlaceCard = (props) => {
 };
 
 PlaceCard.propTypes = {
-  id: PropTypes.number,
-  name: PropTypes.string,
-  amount: PropTypes.number,
-  type: PropTypes.string,
+  card: PropTypes.shape({
+    name: PropTypes.string,
+    amount: PropTypes.number,
+    type: PropTypes.string,
+  }),
+
+  onCardHover: PropTypes.func,
   onCardTitleClick: PropTypes.func
+};
+
+PlaceCard.defaultProps = {
+  onCardTitleClick: () => {}
 };
 
 export default PlaceCard;

@@ -1,13 +1,20 @@
 import React from "react";
-import PlacesList from "./place-card.jsx";
-import Offers from '../../mocks/offers.js';
 import renderer from "react-test-renderer";
+import PlaceCard from "./place-card.jsx";
 
-it(`<PlacesList /> should render`, () => {
+const card = {
+  id: 2,
+  name: `Sun start hotel 4`,
+  amount: 140,
+  type: `Hotel`,
+  description: `Very sunny place`
+};
+
+it(`should render`, () => {
   const tree = renderer
-  .create(
-      <PlacesList places={Offers}
-      />)
+  .create(<PlaceCard
+    key={card.id} card={card} onCardTitleClick={() => {}} onCardHover={() => {}}
+  />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

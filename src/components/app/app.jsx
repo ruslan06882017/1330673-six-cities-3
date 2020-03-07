@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const App = (props) => {
   const {places} = props;
   return (
-    <Main places={places} />
+    <Main places={places}/>
   );
 };
 

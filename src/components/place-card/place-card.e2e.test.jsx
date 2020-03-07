@@ -9,12 +9,15 @@ Enzyme.configure({
 
 it(`Should title of place be pressed`, () => {
   const onCardTitleClick = jest.fn();
+  const card = {
+    name: `A very long name of hotel here`,
+    amount: 111,
+    type: `Apertment`
+  };
 
   const placeCardComponent = shallow(
       <PlaceCard
-        name = {`A very long name of hotel here`}
-        amount = {111}
-        type = {`Apertment`}
+        card = {card}
         onCardTitleClick = {onCardTitleClick}
       />
   );

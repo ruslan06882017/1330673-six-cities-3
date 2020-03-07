@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PlacesList /> should render 1`] = `
+exports[`should render 1`] = `
 <article
   className="cities__place-card place-card"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="place-card__mark"
@@ -38,6 +40,7 @@ exports[`<PlacesList /> should render 1`] = `
         <b
           className="place-card__price-value"
         >
+          140
           €
         </b>
         <span
@@ -88,14 +91,19 @@ exports[`<PlacesList /> should render 1`] = `
     </div>
     <h2
       className="place-card__name"
+      onClick={[Function]}
     >
       <a
         href="#"
-      />
+      >
+        Sun start hotel 4
+      </a>
     </h2>
     <p
       className="place-card__type"
-    />
+    >
+      Hotel
+    </p>
   </div>
 </article>
 `;
