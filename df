@@ -1,0 +1,23 @@
+[33md029dfa[m[33m ([m[1;36mHEAD -> [m[1;32mplace-card.e2e.test.jsx[m[33m, [m[1;31morigin/place-card.e2e.test.jsx[m[33m)[m Fixed as per request
+[33m3e52ebb[m[33m ([m[1;31morigin/module3-task1[m[33m, [m[1;32mmodule3-task1[m[33m)[m Added places list component. No test snapshots
+[33mc0ef056[m[33m ([m[1;31morigin/module2-task2[m[33m, [m[1;32mmodule2-task2[m[33m)[m added places list component
+[33mc13b20d[m Send amount fields to place card component
+[33m24ee78e[m Have updated snapshots
+[33m32bc722[m Return amount field
+[33m8a241ab[m Fixed bugs and extra spaces
+[33mb9276c2[m fixed place-card.e2e test component
+[33m24557b0[m Added place-card.e2e.test
+[33me0fd0f6[m[33m ([m[1;31morigin/module2-task1[m[33m)[m Convert PlaceCard component name to capital
+[33mc7c25b0[m Added last comments by Mentor
+[33ma1ce8f7[m fixed component folder name because of issue
+[33m68c23a4[m Done
+[33m674206b[m added new names placeCard
+[33m7d6d331[m Shifted map method to main component
+[33ma581406[m Developed offer component and added dynamic offer name and amount
+[33m8c195fc[m Developed offer component and added dynamic offer names
+[33mf8ea2cd[m added html content to main.jsx file
+[33m4a420ee[m[33m ([m[1;31morigin/module1-task3[m[33m)[m Fix double .yml file issue
+[33mc0e9f42[m added react code for project six-cities
+[33m0a1ed3d[m Added new enter lines
+[33mdeba181[m Added my new project 6 gorodov
+[33mc746b74[m :hatching_chick:
