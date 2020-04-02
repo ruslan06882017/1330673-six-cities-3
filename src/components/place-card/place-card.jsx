@@ -11,6 +11,9 @@ const PlaceCard = (props) => {
   const handleMouseLeave = () => {
     onCardHover(null);
   };
+  const handleCardTitleClick = () => {
+    onCardTitleClick(card);
+  }
   return (
     <article className="cities__place-card place-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="place-card__mark">
@@ -40,7 +43,7 @@ const PlaceCard = (props) => {
             <span className="visually-hidden">Rating</span>
           </div>
         </div>
-        <h2 className="place-card__name" onClick={onCardTitleClick}>
+        <h2 className="place-card__name" onClick={handleCardTitleClick}>
           <a href="#">{name}</a>
         </h2>
         <p className="place-card__type">{type}</p>

@@ -5,7 +5,6 @@ import PlaceCard from "../place-card/place-card.jsx";
 class PlacesList extends PureComponent {
   constructor(props) {
     super(props);
-    this.onCardTitleClick = this.onCardTitleClick.bind(this);
     this.onCardHover = this.onCardHover.bind(this);
 
     this.state = {
@@ -18,17 +17,15 @@ class PlacesList extends PureComponent {
       activeCard: place
     });
   }
-
-  onCardTitleClick() {
-    return true;
-  }
+  
 
   render() {
-    const {places} = this.props;
+    const {places, onOfferTitleClick} = this.props;
+
     return (
       <div className="cities__places-list places__list tabs__content">
         {places.map((place) => (
-          <PlaceCard key={place.id} card={place} onCardHover={this.onCardHover} onCardTitleClick={this.onCardTitleClick}/>
+          <PlaceCard key={place.id} card={place} onCardHover={this.onCardHover} onCardTitleClick={onOfferTitleClick}/>
         ))}
       </div>
     );

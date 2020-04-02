@@ -20,9 +20,9 @@ class App extends PureComponent {
   _renderApp() {
     const {places} = this.props;
     if (this.state.activeCard) {
-      return <PlaceCardDetails places={places} />;
+      return <PlaceCardDetails place={places[0]} />;
     }
-    return <Main places={places} />;
+    return <Main onOfferTitleClick={this._handleOfferTitleClick} places={places} />;
   }
 
   render() {
@@ -34,8 +34,8 @@ class App extends PureComponent {
           <Route exact path="/">
             {this._renderApp()}
           </Route>
-          <Route path="/place">
-            <PlaceCardDetails places={places}/>
+          <Route path="/dev-offer">
+            <PlaceCardDetails place={places[0]}/>
           </Route>
         </Switch>
       </BrowserRouter>

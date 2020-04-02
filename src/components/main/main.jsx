@@ -3,7 +3,8 @@ import PlacesList from "../places-list/places-list.jsx";
 import PropTypes from "prop-types";
 
 const Main = (props) => {
-  const {places} = props;
+  const {places, onOfferTitleClick} = props;
+
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -93,7 +94,7 @@ const Main = (props) => {
                   <option className="places__option" value="top-rated">Top rated first</option>
                 </select>
               </form>
-              <PlacesList places={places}/>
+              <PlacesList onOfferTitleClick={onOfferTitleClick} places={places}/>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map"></section>

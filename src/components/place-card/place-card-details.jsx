@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 const PlaceCardDetails = (props) => {
   const {place} = props;
+  console.log(props);
   const {name} = place;
+  
+
+
   return (
     <div className="page">
       <header className="header">
