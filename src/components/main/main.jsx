@@ -1,6 +1,6 @@
 import React from "react";
 import PlacesList from "../places-list/places-list.jsx";
-import Map from '../map/map.jsx';
+import OfferMap from '../offer-map/offer-map.jsx'
 import PropTypes from "prop-types";
 
 const Main = (props) => {
@@ -98,9 +98,7 @@ const Main = (props) => {
               <PlacesList onOfferTitleClick={onOfferTitleClick} places={places}/>
             </section>
             <div className="cities__right-section">
-              <section className="cities__map map">
-                <Map />
-              </section>
+              <OfferMap /> 
             </div>
           </div>
         </div>
