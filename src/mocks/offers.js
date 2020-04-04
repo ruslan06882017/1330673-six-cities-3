@@ -20,7 +20,7 @@ export default [
       `Kitchen`,
       `Dishwasher`,
       `Cabel TV`,
-      `Fridge`,
+      `Fridge`
     ],
     type: `Hotel`,
     isPremium: true,
@@ -41,7 +41,7 @@ export default [
       "bedrooms": 3,
       "maxGuests": 3,
     },
-    inside: [
+    insideItems: [
       `Wi-Fi`,
       `Washing machine`,
       `Towels`,
@@ -67,7 +67,7 @@ export default [
       "bedrooms": 3,
       "maxGuests": 3,
     },
-    inside: [
+    insideItems: [
       `Wi-Fi`,
       `Washing machine`,
       `Towels`,

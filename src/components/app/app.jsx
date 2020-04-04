@@ -20,7 +20,10 @@ class App extends PureComponent {
   _renderApp() {
     const {places} = this.props;
     if (this.state.activeCard) {
-      return <PlaceCardDetails place={places[0]} />;
+     // console.log(this.state.activeCard);
+     // console.log(`---------------`);
+    //  console.log(places[0]);
+      return <PlaceCardDetails place={this.state.activeCard} />;
     }
     return <Main onOfferTitleClick={this._handleOfferTitleClick} places={places} />;
   }

@@ -35,8 +35,8 @@ const PlaceCardDetails = (props) => {
         <section className="property">
           <div className="property__gallery-container container">
             <div className="property__gallery">
-              {photos.map((value) => (
-                <div className="property__image-wrapper">
+              {photos.map((value, index) => (
+                <div key={index} className="property__image-wrapper">
                   <img className="property__image" src={value} alt="Photo studio"/>
                 </div>
               ))}
@@ -88,8 +88,8 @@ const PlaceCardDetails = (props) => {
               <div className="property__inside">
                 <h2 className="property__inside-title">What&apos;s inside</h2>
                 <ul className="property__inside-list">
-                  {insideItems.map((item) => (
-                      <li className="property__inside-item">{item}</li>
+                  {insideItems.map((item, index) => (
+                      <li key={index} className="property__inside-item">{item}</li>
                   ))}
                 </ul>
               </div>
@@ -296,14 +296,23 @@ const PlaceCardDetails = (props) => {
   );
 };
 
+
 PlaceCardDetails.propTypes = {
-  place: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        amount: PropTypes.number,
-        type: PropTypes.string
-      })
-  )
+  place: PropTypes.shape({
+      name: PropTypes.string,
+      amount: PropTypes.number,
+      amountDescription: PropTypes.string,
+      rating: PropTypes.number,
+      isPremium: PropTypes.bool,
+      isInBookmark: PropTypes.bool,
+      description: PropTypes.string,
+      image: PropTypes.string,
+      amount: PropTypes.number,
+      type: PropTypes.string,
+      photos: PropTypes.array,
+      features: PropTypes.object,
+      insideItems: PropTypes.array
+    })
 };
 
 
