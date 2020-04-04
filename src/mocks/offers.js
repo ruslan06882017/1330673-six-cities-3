@@ -10,6 +10,9 @@ export default [
       "bedrooms": 3,
       "maxGuests": 3,
     },
+    coordinates: {
+      lat: 52.3909553943508, lnt: 4.85309666406198
+    },
     insideItems: [
       `Wi-Fi`,
       `Washing machine`,
@@ -41,6 +44,9 @@ export default [
       "bedrooms": 3,
       "maxGuests": 3,
     },
+    coordinates: {
+      lat: 52.369553943508, lnt: 4.85309666406198
+    },
     insideItems: [
       `Wi-Fi`,
       `Washing machine`,
@@ -66,6 +72,9 @@ export default [
       "type": `Private room`,
       "bedrooms": 3,
       "maxGuests": 3,
+    },
+    coordinates: {
+      lat: 52.3909553943508, lnt: 4.929309666406198
     },
     insideItems: [
       `Wi-Fi`,
